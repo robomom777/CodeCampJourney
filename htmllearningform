@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Cakes are delicious!</title>
+
+    </head>
+    <body>
+      <h1>The Best Cake recipt ever!</h1>
+      <p>Cake its for fat people.</p>
+    
+     
+      <p>How to get started with ingredients,
+      first get a bowl and gather your items I have listed below.</p>
+    
+    <h2>Ingredients</h2>
+      
+      <ul>
+        <li>Sugar</li>
+        <li>Mik</li>
+        <li>Flour </li>
+        <li>Butter</li>
+        <li>eggs</li>
+        </ul>
+        
+
+    <h2>Instructions</h2>
+    <ol>
+       <li>Dry items mix first</li>
+       <li>Then add butter</li>
+       <li>fold in the milk David</li>
+       <li>mix well slowly don't freak</li>
+        </ol>
+        <img src="https://cdn.freecodecamp.org/curriculum/labs/recipe.jpg" alt="Opossums sitting alone">
+
+      </h2>
+      
+    </body>
+    </html>
