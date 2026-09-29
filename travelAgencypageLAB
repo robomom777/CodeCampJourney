@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Travel agency information" 
+        <body> 
+  <title>Travel Agency Page</title>
+  </head>
+  <h1>Travel Destinations</h1>
+  <p>We have worldwide travel opportunties! Grab your hot package deal today.</p>
+  <h2>Packages</h2>
+  <p>We offer group jet two holiday packages,and private solo with high demand yolo options.</p>
+  <ul>
+    <li><a href="https://www.freecodecamp.org/learn" target="_blank"> Group Travels</a></li>
+    <li><a href="https://www.freecodecamp.org/learn" target="_blank"> Private Tours</a></li>
+  </ul>
+  <h2>Top Itineraries</h2>
+  <ol>
+    <li>
+  <figure>
+    <a href="https://www.freecodecamp.org/learn" target="_blank"><img src="https://cdn.freecodecamp.org/curriculum/labs/colosseo.jpg" alt="Lights of the colosseo" </img>
+      </a>
+      <figcaption>The Colosseo</figcaption>
+      </figure></li>
+      <li>
+  <figure>
+     <a href="https://www.freecodecamp.org/learn" target="_blank"><img src="https://cdn.freecodecamp.org/curriculum/labs/alps.jpg" alt="The alps" </img>
+      </a>
+       <figcaption>The Alps</figcaption>
+       </figure></li>
+      <li>
+   <figure>
+     <a href="https://www.freecodecamp.org/learn" target="_blank"><img src="https://cdn.freecodecamp.org/curriculum/labs/sea.jpg" alt="The Sea" </img>
+      </a>
+      <figcaption>The Sea</figcaption>
+      </figure>
+</ol>
+</li>
+</body>
+
+  </html>
