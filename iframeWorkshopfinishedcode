@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Video Compilation Page</title>
+</head>
+
+<body>
+    <main>
+        <h1>My Youtube favorite Videos</h1>
+        <p>My favorite way to learn about coding and applying it to real world problems.</p>
+        <section>
+            <h2>Tutorial Getting started on Java Script</h2>
+            <p>A cool tutorial on JavaScript 5</p>
+            <iframe src="https://youtube.com/embed/x1NxkEjfNtl&is=Ojo5wjvbQ4mqdqFv" title="p5.js" width="200" height="200" ></iframe>
+        </section>
+        <section>
+            <h2>Learn Java Script</h2>
+            <p>Full Course for Beginners</p>
+            <iframe src="https://youtube.com/embed/PkZNo7MFNFg&is=nd71wb3ROu5mhANm" title="Learn JavaScript in just 3 hours" width="200" height="200" ></iframe>
+        <section>
+            <h2>Learn the Basics of JS</h2>
+            <p>Learn all the JavaScript basics in 20 mins</p>
+            <iframe src="https://youtube.com/embed/xKOyDDuQSVY&is=gCTOGOJRLuxMOto" title="JS Basics" width="200" height="200" ></iframe>
+        </section>
+                </main>
+
+</body>
+
+</html>
