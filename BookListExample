@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Books</title>
+  <meta charset="UTF-8" />
+</head>
+
+<body>
+
+  <table>
+
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Genre</th>
+        <th>Publication Year</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Of Mice and Men</td>
+        <td>John Stienbeck</td>
+        <td>Novella</td>
+        <td>1937</td>
+      </tr>
+
+      <tr>
+        <td>Good Omens</td>
+        <td>Terry Pratchett</td>
+        <td>Comedy</td>
+        <td>1990</td>
+      </tr>
+
+      <tr>
+        <td>The Colour of Magic</td>
+        <td>Terry Pratchett</td>
+        <td>Novella</td>
+        <td>1983</td>
+      </tr>
+
+      <tr>
+        <td>Coraline</td>
+        <td>Neil Gaiman</td>
+        <td>Horror</td>
+        <td>2002</td>
+      </tr>
+
+      <tr>
+        <td>Coraline 2</td>
+        <td>Neil Gaiman</td>
+        <td>Horror</td>
+        <td>2022</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td colspan="4">Total Books: 5</td>
+      </tr>
+    </tfoot>
+
+  </table>
+
+</body>
+</html>
