@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Event Hub</title>
+</head>
+<header><h1>Event Hub</h1>
+<nav>
+ <ul>
+    <li><a href="#upcoming-events">Upcoming Events</a></li>
+    <li><a href="#past-events">Past Events</a></li>
+</ul>
+</nav>
+    <body>
+
+    </body>
+</header>
+<main>
+    <section id="upcoming-events">
+        <h2>Upcoming Events</h2>
+        <article><h3>Fresno Night Crawlers Pub Night!
+            </h3><p>The pants start walking Oct 2nd at 
+                out local Beer Pub in the Tower District.
+                Come out and see us since Yolo!
+            </p>
+            </article>
+        <article><h3>Octoberfest drink Pumpkin spice!</h3>
+            <p>Bring a friend or two to the Octoberfest
+                drink all you can pumpkin spice lattes. 
+                This is a non-acholic event. Bring the kids and leave the lust at home.
+            </p>
+            </article>
+
+    </section>
+    <section id="past-events">
+       <h2>Past Events</h2>
+
+<article>
+  <h3>September Dogman Dance</h3>
+
+  <p>Come out and howl at the moon. The seventh annual Dogman dance off is happening this September 17th at the old Eagle Cafe south of the Tower District. Come out and get funky.</p>
+
+  <img src="https://cdn.freecodecamp.org/curriculum/labs/past-event1.jpg" alt="People attending an art festival">
+</article>
+
+<article>
+  <h3>Cryptid Meet Up</h3>
+
+  <img src="https://cdn.freecodecamp.org/curriculum/labs/past-event2.jpg" alt="People attending a music festival">
+
+  <p>The second annual Cryptid meet up is September 5th at 7pm. Bring your cosplay, stories, and cryptids if you got them! See you there!</p>
+</article>
+            
+          <img src="https://cdn.freecodecamp.org/curriculum/labs/past-event2.jpg" alt="People attending a music festival">
+                
+
+    </section>
+</main>
+
+<body>
+
+</body>
+
+</html>
