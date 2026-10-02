@@ -1,0 +1,6 @@
+<form action="">
+  <label for="email">Email address:</label>
+  <input type="email" id="email" name="email" />
+  <button type="reset">Reset form</button>
+  <button type="submit">Submit form</button>
+</form>
