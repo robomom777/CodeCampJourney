@@ -1,0 +1,4 @@
+<form action="">
+  <label for="email"> Email Address: </label>
+  <input type="email" id="email" placeholder="example@email.com" />
+</form>
