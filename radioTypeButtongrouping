@@ -18,3 +18,5 @@
   <input type="checkbox" id="location" name="location" value="location" />
 
   <label for="price">Price</label>
+<input type="checkbox" id="price" name="price" value="price" />
+</fieldset>
