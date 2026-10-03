@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <header> 
+     <h1 id="title">free CodeCamp Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform.</p></header>
+    
+
+    <form id="survey-form">
+      <label id="name-label" for="name">Name:</label>
+    <input
+      id="name"
+      type="text"
+      placeholder="Enter your name"
+      required
+    >
+
+    <br><br>
+
+    <label id="email-label" for="email">Email:</label>
+    <input
+      id="email"
+      type="email"
+      placeholder="Enter your email"
+      required
+    >
+<label id="number-label" for="number">Age:</label>
+    <input
+      id="number"
+      type="number"
+      min="18"
+      max="100"
+      placeholder="Enter your age"
+    >
+
+    <br><br>
+
+    <label for="dropdown">What is your favorite activity?</label>
+    <select id="dropdown">
+      <option value="art">Art</option>
+      <option value="coding">Coding</option>
+      <option value="reading">Reading</option>
+    </select>
+
+    <br><br>
+
+    <p>How do you prefer to learn?</p>
+
+    <input
+      type="radio"
+      id="online"
+      name="learning"
+      value="online"
+    >
+    <label for="online">Online</label>
+
+    <input
+      type="radio"
+      id="classroom"
+      name="learning"
+      value="classroom"
+    >
+    <label for="classroom">Classroom</label>
+
+    <br><br>
+
+    <p>Which subjects interest you?</p>
+
+    <input
+      type="checkbox"
+      id="html"
+      name="subjects"
+      value="html"
+    >
+    <label for="html">HTML</label>
+
+    <input
+      type="checkbox"
+      id="css"
+      name="subjects"
+      value="css"
+    >
+    <label for="css">CSS</label>
+
+    <input
+      type="checkbox"
+      id="javascript"
+      name="subjects"
+      value="javascript"
+    >
+    <label for="javascript">JavaScript</label>
+
+    <br><br>
+
+    <label for="comments">Additional comments:</label>
+    <textarea
+      id="comments"
+      placeholder="Enter your comments here"
+    ></textarea>
+
+    <br><br>
+     <button id="submit" type="submit">Submit</button>
+
+    </form>
+  </body>
+</html>
