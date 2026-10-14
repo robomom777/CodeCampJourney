@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Desktop Pet</title>
+</head>
+<body>
+
+  <div class="pet-drag-wrapper" id="petWrapper">
+    <!-- 💬 NEW: The speech bubble element -->
+    <div class="bubble" id="speechBubble">Hello!</div>
+    
+    <div class="pet" id="myPet"></div>
+  </div>
+
+  <script>
+    const petElement = document.getElementById('myPet');
+    const wrapperElement = document.getElementById('petWrapper');
+    const bubbleElement = document.getElementById('speechBubble');
+    
+    let isDragging = false;
+    let startX, startY;
+    let sleepTimer;
+    let bubbleTimer;
+
+    // 💬 List of random things your unicorn can say
+    const phrases = [
+      "✨ Magic is real!",
+      "💖 You're doing great!",
+      "🦄 Need a break?",
+      "🌈 Traveled from 2026!",
+      "💤 Zzz...",
+      "⭐ Shine bright!",
+      "🥕 Got carrots?",
+      "💻 Have you done your coding today?",
+      "🎮 Have you played WOW yet?"
+    ];
+
+    // 💬 Function to show a random message
+    function speak() {
+      // Pick a random line from our list
+      const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
+      bubbleElement.textContent = randomPhrase;
+      
+      // Make it visible
+      bubbleElement.classList.add('visible');
+      
+      // Hide it automatically after 3 seconds
+      clearTimeout(bubbleTimer);
+      bubbleTimer = setTimeout(() => {
+        bubbleElement.classList.remove('visible');
+      }, 3000);
+    }
+
+    function fallAsleep() {
+      petElement.classList.add('sleeping');
+      wrapperElement.classList.add('sleeping');
+    }
+
+    function wakeUp() {
+      petElement.classList.remove('sleeping');
+      wrapperElement.classList.remove('sleeping');
+      resetSleepTimer();
+    }
+
+    function resetSleepTimer() {
+      clearTimeout(sleepTimer);
+      sleepTimer = setTimeout(fallAsleep, 7000);
+    }
+
+    resetSleepTimer();
+
+    petElement.addEventListener('mousedown', (e) => {
+      isDragging = true;
+      startX = e.screenX;
+      startY = e.screenY;
+      wakeUp();
+    });
+
+    // 💬 Trigger speech only on a quick mouse click (mouseup), not a long drag hold
+    petElement.addEventListener('mouseup', (e) => {
+      if (isDragging) {
+        speak();
+      }
+      isDragging = false;
+    });
+
+    window.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      
+      const deltaX = e.screenX - startX;
+      const deltaY = e.screenY - startY;
+
+      if (deltaX > 0) {
+        petElement.style.transform = 'scaleX(-1)';
+      } else if (deltaX < 0) {
+        petElement.style.transform = 'scaleX(1)';
+      }
+
+      startX = e.screenX;
+      startY = e.screenY;
+
+      window.moveBy(deltaX, deltaY);
+      wakeUp();
+    });
+  </script>
+</body>
+</html>

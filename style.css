@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0); 
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Outer wrapper handles the continuous floating drift animation */
+.pet-drag-wrapper {
+  padding: 10px; /* Shrunk padding to fit the smaller window */
+  animation: float 2.5s infinite ease-in-out;
+}
+
+/* When this class is added by JavaScript, the float stops! */
+.pet-drag-wrapper.sleeping {
+  animation: none; 
+}
+
+/* 🪙 Updated to match a physical U.S. Silver Dollar size */
+.pet {
+  width: 120px;   /* Tiny, coin-sized layout dimensions */
+  height: 120px; 
+  background-image: url('Candy_corn.png'); 
+  background-size: contain;                     
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-drag: none;
+  transition: transform 0.2s ease-in-out; 
+}
+
+.pet:active {
+  cursor: grabbing;
+}
+
+/* When the pet falls asleep, apply a deep breathing rhythm */
+.pet.sleeping {
+  animation: breathe 3.5s infinite ease-in-out;
+  opacity: 0.85;  
+}
+
+/* A floating keyframe slightly toned down for a tiny character */
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-6px) rotate(2deg); } /* Reduced movement distance so it stays inside its small box */
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+/* The sleeping respiration movement keyframe */
+@keyframes breathe {
+  0% { transform: scaleY(1) scaleX(1); }
+  50% { transform: scaleY(0.94) scaleX(1.02) translateY(2px); }
+  100% { transform: scaleY(1) scaleX(1); }
+}
