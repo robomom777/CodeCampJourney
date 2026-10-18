@@ -1,0 +1,45 @@
+
+body {
+  background-color: #f4f4f4;
+}
+
+.color-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+}
+
+
+.color-box {
+  width: 60px;
+  height: 60px;
+  min-width: 0;
+  flex: 1;
+}
+
+
+.color1 {
+  background-color: #71F53E;
+  box-shadow: 0 0 10px 0 #3B7E20CC;
+}
+
+.color2 {
+  background-color: rgb(245, 62, 113);
+  box-shadow: 0 0 10px 0;
+}
+
+.color3 {
+  background-color: blue;
+  box-shadow: 0 0 10px 0;
+}
+
+.color4 {
+  background-color: hsl(175, 80%, 60%);
+  box-shadow: 0 0 10px 0;
+}
+
+.color5 {
+  background-color: pink;
+  box-shadow: 0 0 10px 0;
+}
